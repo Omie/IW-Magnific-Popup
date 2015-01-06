@@ -25,7 +25,7 @@ function iwmp_add_script() { ?>
 			// Single Image
 			$('a[href*=".jpg"], a[href*=".jpeg"], a[href*=".png"], a[href*=".gif"]').each(function(){
 				//single image popup
-				if ($(this).parents('.iwmp-gallery').length == 0) {
+				if ($(this).parents('.tiled-gallery').length == 0) {
 					$(this).magnificPopup({
 						type:'image',
 						callbacks: {
@@ -56,7 +56,7 @@ function iwmp_add_script() { ?>
 			});		
 				
 			// Gallery Images
-			$('.iwmp-gallery').each(function() {
+			$('.tiled-gallery').each(function() {
 				$(this).magnificPopup({
 					delegate: 'a[href*=".jpg"], a[href*=".jpeg"], a[href*=".png"], a[href*=".gif"]',
 					type: 'image',
